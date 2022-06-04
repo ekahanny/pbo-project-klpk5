@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="words.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #feffff;">
+            <children>
+            <ImageView fitHeight="206.0" fitWidth="231.0" layoutX="300.0" layoutY="211.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/backrnd1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="231.0" layoutX="94.0" layoutY="214.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/backrnd1%20-%20Copy.png" />
+               </image>
+            </ImageView>
+                <Label fx:id="displayUsername" alignment="CENTER" layoutX="96.0" layoutY="49.0" prefHeight="57.0" prefWidth="410.0" text="Selamat Datang, user!" textAlignment="CENTER" textFill="#26427e">
+                    <font>
+                        <Font name="Calibri" size="35.0" />
+                    </font>
+                </Label>
+                <Label fx:id="timeLabel" layoutX="162.0" layoutY="116.0" prefHeight="35.0" prefWidth="276.0" style="-fx-alignment: center;" text="Hari" textAlignment="CENTER" textFill="#4a899e">
+                    <font>
+                        <Font name="Calibri" size="30.0" />
+                    </font>
+                </Label>
+                <Button fx:id="playButton" alignment="BOTTOM_LEFT" layoutX="245.0" layoutY="168.0" mnemonicParsing="false" onAction="#playGame" prefHeight="43.0" prefWidth="124.0" style="-fx-background-color: #1f3f96; -fx-cursor: hand;" text="Mulai" textFill="#ffc847">
+                    <font>
+                        <Font name="Calibri" size="23.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" layoutX="189.0" layoutY="237.0" prefHeight="19.0" prefWidth="245.0" text="Statistik Data" textAlignment="CENTER">
+                    <font>
+                        <Font name="Calibri" size="24.0" />
+                    </font>
+                </Label>
+                <Circle fill="#ffffff00" layoutX="295.0" layoutY="344.0" radius="45.0" stroke="#ffbb00" strokeType="INSIDE" strokeWidth="3.0" />
+                <Text layoutX="144.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Kata">
+                    <font>
+                        <Font name="Calibri" size="13.0" />
+                    </font>
+                </Text>
+                <Text fx:id="total" layoutX="141.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="60.30908203125">
+                    <font>
+                        <Font name="Calibri" size="36.0" />
+                    </font>
+                </Text>
+                <Circle fill="#ffffff00" layoutX="171.0" layoutY="344.0" radius="45.0" stroke="#427376" strokeType="INSIDE" strokeWidth="3.0" />
+                <Text layoutX="261.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rata-Rata Kata" textAlignment="CENTER" wrappingWidth="70.70904541015625">
+                    <font>
+                        <Font name="Calibri" size="13.0" />
+                    </font>
+                </Text>
+                <Text fx:id="wpm" layoutX="265.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="60.30908203125">
+                    <font>
+                        <Font name="Calibri" size="36.0" />
+                    </font>
+                </Text>
+                <Circle fill="#ffffff00" layoutX="423.0" layoutY="344.0" radius="45.0" stroke="#266f8c" strokeType="INSIDE" strokeWidth="3.0" />
+                <Text layoutX="395.5" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tidak valid">
+                    <font>
+                        <Font name="Calibri" size="13.0" />
+                    </font>
+                </Text>
+                <Text fx:id="invalid" layoutX="393.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="60.30908203125">
+                    <font>
+                        <Font name="Calibri" size="36.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="28.0" fitWidth="22.0" layoutX="327.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icon.png" />
+                    </image>
+                </ImageView>
+            <ImageView fitHeight="475.0" fitWidth="288.0" layoutX="-1.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/backrnd2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="71.0" layoutX="515.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/backrnd3.png" />
+               </image>
+            </ImageView>
+            </children></Pane>
+    </children>
+</GridPane>
